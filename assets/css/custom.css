@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600&display=swap");
+@font-face {
+  font-family: "montserrat";
+  src: url("../webfonts/ArbFonts.com/ArbFONTS-Montserrat-Arabic-Regular.ttf");
+}
 /*
 * custom.css
 * File include item demo only specific css only
@@ -135,9 +138,8 @@ body::-webkit-scrollbar-thumb {
   padding: 20px 0;
 }
 .projects h2 {
-  text-align: center;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .projects .project {
   padding: 45px 24px 32px;
@@ -167,7 +169,7 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.5s ease-in-out;
 }
 .projects .project .icon img {
-  height: 40px;
+  height: 36px;
 }
 .projects .project:hover {
   cursor: pointer;
@@ -175,7 +177,7 @@ body::-webkit-scrollbar-thumb {
   transform: translateY(-8px);
 }
 .projects .project:hover .icon {
-  border-color: #fd465b;
+  border-color: #7367f0;
 }
 .projects .project h5 {
   font-size: 16px;
@@ -224,10 +226,57 @@ body::-webkit-scrollbar-thumb {
 }
 
 .add_project h2 {
-  text-align: center;
   font-size: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 .add_project h2 img {
   height: 32px;
+}
+
+.template-customizer-open-btn {
+  visibility: hidden !important;
+}
+
+.companies {
+  min-height: 80vh;
+}
+.companies h2 {
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.companies .company {
+  width: 100%;
+  box-shadow: none;
+  padding: 16px;
+  transition: all 0.5s ease-in-out;
+}
+.companies .company .company_img {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  aspect-ratio: 3/2;
+  border-bottom: 1px solid #f8f7fa;
+}
+.companies .company .company_img img {
+  width: 100%;
+  transform: scale(0.85);
+  aspect-ratio: 3/2;
+  transition: all 0.5s ease-in-out;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.companies .company .info {
+  padding-top: 16px;
+}
+.companies .company .info h5 {
+  font-size: 14px;
+  margin: 0;
+}
+.companies .company:hover {
+  cursor: pointer;
+  box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
+  transform: translateY(-8px);
+}
+.companies .company:hover .company_img img {
+  transform: scale(0.9);
 }/*# sourceMappingURL=custom.css.map */
