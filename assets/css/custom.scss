@@ -1,10 +1,7 @@
-@font-face {
-  font-family: 'montserrat';
-  src: url('../webfonts/ArbFonts.com/ArbFONTS-Montserrat-Arabic-Regular.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+* {
+  font-family: 'Cairo', sans-serif !important;
 }
-// body {
-//   font-family: 'montserrat', sans-serif !important;
-// }
 /*
 * custom.css
 * File include item demo only specific css only
@@ -155,8 +152,8 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #fff;
-      border: 2px solid #f8f7fa;
+      background: var(--bs-card-bg);
+      border: 2px solid var(--bs-body-bg);
       transition: all .5s ease-in-out;
       img {
         height: 36px;
@@ -230,7 +227,6 @@ body {
   visibility: hidden !important;
 }
 .companies {
-  min-height: 80vh;
   h2 {
     font-size: 24px;
     margin-bottom: 24px;
@@ -245,11 +241,12 @@ body {
       cursor: pointer;
       overflow: hidden;
       aspect-ratio: 3 / 2;
-      border-bottom: 1px solid #f8f7fa;
+      border-bottom: 1px solid var(--bs-body-bg);
       img {
         width: 100%;
         transform: scale(.85);
         aspect-ratio: 3 / 2;
+        mix-blend-mode: multiply;
         transition: all .5s ease-in-out;
         object-fit: contain;
       }
@@ -267,6 +264,50 @@ body {
       transform: translateY(-8px);
       .company_img img {
         transform: scale(.9);
+      }
+    }
+  }
+  .location {
+    width: 100%;
+    box-shadow: none;
+    padding: 16px;
+    transition: all .5s ease-in-out;
+    .company_img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3 / 2;
+      border-bottom: 1px solid #f8f7fa;
+      img {
+        width: 100%;
+        transition: all .5s ease-in-out;
+        object-fit: cover;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: all .5s ease-in-out;
+      }
+    }
+    .info {
+      padding-top: 16px;
+      h5 {
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, .3);
+      transform: translateY(-8px);
+      .company_img::after {
+        background-color: rgba(34, 34, 34, 0.6);
       }
     }
   }

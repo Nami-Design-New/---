@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed" dir="ltr" data-theme="theme-default"
+<html lang="ar" class="light-style layout-navbar-fixed layout-menu-fixed" dir="rtl" data-theme="theme-default"
     data-assets-path="./assets/" data-template="vertical-menu-template">
 
 <head>
@@ -291,7 +291,7 @@
                                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
                                     data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                                     <i class="ti ti-bell ti-md"></i>
-                                    <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                                    <span class="badge bg-danger rounded-pill badge-notifications">2</span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end py-0">
                                     <li class="dropdown-menu-header border-bottom">
@@ -432,23 +432,13 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <form>
-                                            <div class="mb-3 form-group d-flex gap-3">
-                                                <div class="field w-100">
-                                                    <label class="form-label" for="location">الموقع -
-                                                        المدينة
-                                                        - المحافظة</label>
-                                                    <input type="text" class="form-control" id="location"
-                                                        name="location" placeholder="قلوة" />
-                                                </div>
-                                                <div class="field w-100">
-                                                    <label class="form-label" for="project-name"> اسم المشروع
-                                                    </label>
-                                                    <input type="text" class="form-control" id="project-name"
-                                                        name="project-name"
-                                                        placeholder="انشاء حدائق و ممرات مشاه وساحات" />
-                                                </div>
+                                            <div class="mb-3 ">
+                                                <label class="form-label" for="project-name"> اسم المشروع
+                                                </label>
+                                                <input type="text" class="form-control" id="project-name"
+                                                    name="project-name" placeholder="انشاء حدائق و ممرات مشاه وساحات" />
                                             </div>
-                                            <div class="mb-3 form-group d-flex gap-3">
+                                            <div class="mb-3 form-group d-flex gap-3 flex-lg-row flex-column">
                                                 <div class="field w-100">
                                                     <label class="form-label" for="project-number">رقم المشروع</label>
                                                     <input type="text" class="form-control" id="project-number"
@@ -462,12 +452,27 @@
                                                         name="project-value" placeholder="21,716,542.5" />
                                                 </div>
                                             </div>
-                                            <div class="mb-3">
-                                                <label class="form-label" for="company">المقاول</label>
-                                                <input type="text" id="company" name="company" class="form-control"
-                                                    placeholder="شركة عبدالمحسن شعبان القحطاني" />
+                                            <div class="mb-3 form-group d-flex gap-3 flex-lg-row flex-column">
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="company">المقاول</label>
+                                                    <select id="company" class="selectpicker w-100"
+                                                        data-style="btn-default">
+                                                        <option>شركة عبدالمحسن شعبان القحطاني</option>
+                                                        <option>مؤسسة هدى الاتقان للمقاولات</option>
+                                                    </select>
+                                                </div>
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="location">الموقع - المدينة -
+                                                        المحافظة</label>
+                                                    <select id="location" class="selectpicker w-100"
+                                                        data-style="btn-default">
+                                                        <option>قلوة</option>
+                                                        <option>الرياض</option>
+                                                        <option>جدة</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="mb-3 form-group d-flex gap-3">
+                                            <div class="mb-3 form-group d-flex gap-3 flex-lg-row flex-column">
                                                 <div class="field w-100">
                                                     <label class="form-label" for="start-date">تاريخ بدء الموقع
                                                         (ميلادي)</label>
@@ -478,8 +483,12 @@
                                                     <label for="status" class="form-label">الحالة</label>
                                                     <select id="status" class="selectpicker w-100"
                                                         data-style="btn-default">
-                                                        <option>جارى</option>
+                                                        <option>منتظم</option>
+                                                        <option>متأخر</option>
                                                         <option>متعثر</option>
+                                                        <option>مسحوب</option>
+                                                        <option>متوقف</option>
+                                                        <option>منجز</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -503,7 +512,8 @@
                                 <script>
                                     document.write(new Date().getFullYear())
                                 </script>
-                                , made with ❤️ by <a href="https://romoz.co" target="_blank" class="fw-medium pe-2">Romoz Network</a>
+                                , made with ❤️ by <a href="https://romoz.co" target="_blank"
+                                    class="fw-medium pe-2">Romoz Network</a>
                             </div>
                         </div>
                     </div>
