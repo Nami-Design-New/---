@@ -357,14 +357,6 @@
                                                         <option>جدة</option>
                                                     </select>
                                                 </div>
-                                            </div>
-                                            <div class="mb-3 d-flex gap-3 flex-lg-row flex-column">
-                                                <div class="field w-100">
-                                                    <label class="form-label" for="start-date">تاريخ بدء الموقع
-                                                        (ميلادي)</label>
-                                                    <input type="date" class="form-control" id="start-date"
-                                                        name="start-date" />
-                                                </div>
                                                 <div class="field w-100">
                                                     <label for="status" class="form-label">الحالة</label>
                                                     <select id="status" class="selectpicker w-100"
@@ -378,7 +370,23 @@
                                                     </select>
                                                 </div>
                                             </div>
+                                            <div class="mb-3 d-flex gap-3 flex-lg-row flex-column">
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="start-date">تاريخ بدء الموقع
+                                                        (ميلادي)</label>
+                                                    <input type="date" class="form-control" id="start-date"
+                                                        name="start-date" />
+                                                </div>
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="finish-date">تاريخ إنتهاء الموقع
+                                                        (ميلادي)
+                                                    </label>
+                                                    <input type="date" class="form-control" id="finish-date"
+                                                        name="finish-date" />
+                                                </div>
+                                            </div>
                                             <div class="mb-3">
+                                                <label class="form-label" for="projectLocation">الموقع</label>
                                                 <input type="text" id="projectLocation" class="form-control mb-3"
                                                     placeholder="حدد موقع المشروع...">
                                                 <div id="mapLifting" style="height: 360px"></div>
@@ -447,7 +455,7 @@
         let markerTarget;
         function initMap(mapElement, searchBoxElement, latitudeElement, longitudeElement) {
             const map = new google.maps.Map(document.getElementById(mapElement), {
-                center: { lat: 19.9451086, lng: 41.2457101 },
+                center: { lat: 20.01219546620856, lng: 41.467541518554675 },
                 zoom: 12
             });
             const input = document.getElementById(searchBoxElement);

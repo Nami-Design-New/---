@@ -113,9 +113,9 @@
       document.querySelector("#supportTracker")
     ),
     i = {
-      series: [85],
-      labels: ["Completed Task"],
-      chart: { height: 360, type: "radialBar" },
+      series: [100],
+      labels: ["نسبة المدة المنقضية"],
+      chart: { height: 260, type: "radialBar" },
       plotOptions: {
         radialBar: {
           offsetY: 10,
@@ -125,7 +125,7 @@
           track: { background: e, strokeWidth: "100%" },
           dataLabels: {
             name: {
-              offsetY: -20,
+              offsetY: -10,
               color: a,
               fontSize: "13px",
               fontWeight: "400",
