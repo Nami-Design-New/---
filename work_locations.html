@@ -79,7 +79,7 @@
                             <div>المشاريع</div>
                         </a>
                     </li>
-                    <li class="menu-item">
+                    <li class="menu-item active">
                         <a href="work_locations.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-building-skyscraper"></i>
                             <div>مواقع العمل</div>
@@ -91,7 +91,7 @@
                             <div>الشركات المنفذه (المقاول)</div>
                         </a>
                     </li>
-                    <li class="menu-item active">
+                    <li class="menu-item">
                         <a href="locations.html" class="menu-link">
                             <i class="menu-icon tf-icons ti ti-map-2"></i>
                             <div>المناطق</div>
@@ -309,17 +309,11 @@
                 </nav>
                 <section class="companies">
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <h2>
-                            المدن و المناطق
-                        </h2>
                         <div class="row">
-                            <div class="col-lg-4 col-md-6 p-2">
-                                <div class="location card">
-                                    <div class="company_img">
-                                        <img src="assets/img/Qilwah_city.jpeg" alt="">
-                                    </div>
-                                    <div class="info">
-                                        <h5>مدينة قلوة </h5>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div id="map" style="width: 100%; height: 450px;"></div>
                                     </div>
                                 </div>
                             </div>
@@ -368,6 +362,61 @@
     <script src="./assets/js/main.js"></script>
     <!-- Page JS -->
     <script src="./assets/js/dashboards-analytics.js"></script>
+    <!-- locations script -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_N1k4WKCdiZqCIjjgO0aaKz1Y19JqYqw&libraries=places&callback=initMap">
+        </script>
+    <script>
+        // Function to initialize the map
+        function initMap() {
+            // map frame
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 19.9451086, lng: 41.2457101 },
+                zoom: 12
+            });
+            // markers
+
+            var marker1 = new google.maps.Marker({
+                position: { lat: 19.95721051881781, lng: 41.2372128618408 },
+                map: map,
+                title: 'Location 1',
+                icon: {
+                    url: 'assets/img/icon1.jpeg',
+                    scaledSize: new google.maps.Size(60, 80)
+                },
+            });
+
+            var marker2 = new google.maps.Marker({
+                position: { lat: 19.940993736257447, lng: 41.35326320058592 },
+                map: map,
+                title: 'Location 2',
+                icon: {
+                    url: 'assets/img/icon1.jpeg',
+                    scaledSize: new google.maps.Size(60, 80)
+                },
+            });
+
+            var marker3 = new google.maps.Marker({
+                position: { lat: 19.919944832271916, lng: 41.23129054433592 },
+                map: map,
+                title: 'Location 3',
+                icon: {
+                    url: 'assets/img/icon2.webp',
+                    scaledSize: new google.maps.Size(60, 80)
+                },
+            });
+
+            marker1.addListener('click', function () {
+                window.location.href = 'project-details.html';
+            });
+            marker2.addListener('click', function () {
+                window.location.href = 'project-details.html';
+            });
+            marker3.addListener('click', function () {
+                window.location.href = 'project-details.html';
+            });
+        }
+    </script>
 </body>
 
 </html>
