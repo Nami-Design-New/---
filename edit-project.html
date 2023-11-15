@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./assets/vendor/libs/typeahead-js/typeahead.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/apex-charts/apex-charts.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/swiper/swiper.css" />
+    <link rel="stylesheet" href="./assets/vendor/libs/bootstrap-select/bootstrap-select.css" />
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
@@ -106,7 +107,7 @@
                 </ul>
             </aside>
             <!-- Layout container -->
-            <div class="layout-page justify-content-between">
+            <div class="layout-page">
                 <!-- Navbar -->
                 <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
                     id="layout-navbar">
@@ -307,124 +308,121 @@
                         <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
                     </div>
                 </nav>
-                <section class="project_details">
+                <section class="add_project">
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <h2 class="title">
-                            صيانة طرق وشوارع بلدية محافظة قلوة 
-                            <span>
-                                جارى
-                                <div class="spinner-border" role="status"></div>
-                            </span>
+                        <h2>
+                            تعديل مشروع انشاء حدائق و ممرات مشاه وساحات
                         </h2>
-                        <ul class="info_list">
-                            <li>
-                                <p>مشروع رقم : <span>19/14/703/300010000/2241</span></p>
-                            </li>
-                            <li>
-                                <p>الموقع - المدينة - المحافظة : <span>قلوة</span></p>
-                            </li>
-                            <li>
-                                <p>المقاول : <a href="projects.html">شركة عبدالمحسن شعبان القحطاني</a></p>
-                            </li>
-                        </ul>
-                        <div class="card mb-4 st_card">
-                            <div class="card-widget-separator-wrapper">
-                                <div class="card-body card-widget-separator">
-                                    <div class="row gy-4 gy-sm-1">
-                                        <div class="col-sm-6 col-lg-3">
-                                            <div
-                                                class="d-flex justify-content-between align-items-start card-widget-1 border-end pb-3 pb-sm-0">
-                                                <div>
-                                                    <h6 class="mb-2">تاريخ بدء الموقع</h6>
-                                                    <h4 class="mb-2">1/23/2023</h4>
-                                                </div>
-                                                <div class="icon">
-                                                    <img src="assets/img/startDate.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <hr class="d-none d-sm-block d-lg-none me-4">
-                                        </div>
-                                        <div class="col-sm-6 col-lg-3">
-                                            <div
-                                                class="d-flex justify-content-between align-items-start card-widget-2 border-end pb-3 pb-sm-0">
-                                                <div>
-                                                    <h6 class="mb-2">تاريخ إنتهاء الموقع</h6>
-                                                    <h4 class="mb-2">1/22/2026</h4>
-                                                </div>
-                                                <div class="icon">
-                                                    <img src="assets/img/endDate.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <hr class="d-none d-sm-block d-lg-none">
-                                        </div>
-                                        <div class="col-sm-6 col-lg-3">
-                                            <div
-                                                class="d-flex justify-content-between align-items-start border-end pb-3 pb-sm-0 card-widget-3">
-                                                <div>
-                                                    <h6 class="mb-2">إجمالي مدة المشروع</h6>
-                                                    <h4 class="mb-2">1095 يوم</h4>
-                                                </div>
-                                                <div class="icon">
-                                                    <img src="assets/img/duration.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-lg-3">
-                                            <div class="d-flex justify-content-between align-items-start">
-                                                <div>
-                                                    <h6 class="mb-2">عدد أيام سير المشروع</h6>
-                                                    <h4 class="mb-2">247 يوم</h4>
-                                                </div>
-                                                <div class="icon">
-                                                    <img src="assets/img/Elapsedperiod.svg" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 st_card">
-                                    <div class="card-header d-flex justify-content-between pb-0">
-                                        <div class="card-title mb-0">
-                                            <h5 class="mb-0">نسبة المدة المنقضية</h5>
-                                        </div>
-                                    </div>
+                            <div class="col-12">
+                                <div class="card">
                                     <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-4 col-md-12 col-lg-4">
-                                                <div class="mt-lg-4 mt-lg-2 mb-lg-4 mb-2 pt-1">
-                                                    <h1 class="mb-0 dayes">274 يوم</h1>
-                                                    <p class="mb-0">من <span>1095</span> يومًا</p>
+                                        <form>
+                                            <div class="mb-3 d-flex gap-3 flex-lg-row flex-column">
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="project-name"> اسم المشروع
+                                                    </label>
+                                                    <input type="text" class="form-control" id="project-name"
+                                                        name="project-name"
+                                                        placeholder="انشاء حدائق و ممرات مشاه وساحات"
+                                                        value="انشاء حدائق و ممرات مشاه وساحات" />
+                                                </div>
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="project-number">رقم المشروع</label>
+                                                    <input type="text" class="form-control" id="project-number"
+                                                        name="project-number" placeholder="19/14/703/300010000/2241"
+                                                        value="19/14/703/300010000/2241" />
+                                                </div>
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="project-value">
+                                                        قيمة المشروع (ريال)
+                                                    </label>
+                                                    <input type="text" class="form-control" id="project-value"
+                                                        name="project-value" placeholder="21,716,542.5"
+                                                        value="placeholder=" 21,716,542.5"" />
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-8 col-md-12 col-lg-8">
-                                                <div id="supportTracker"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="card h-100 st_card">
-                                    <div class="card-header d-flex justify-content-between pb-0">
-                                        <div class="card-title mb-0">
-                                            <h5 class="mb-0">نسبة إنجاز المشروع</h5>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-12 col-sm-4 col-md-12 col-lg-4">
-                                                <div class="mt-lg-4 mt-lg-2 mb-lg-4 mb-2 pt-1">
-                                                    <p class="mb-0">تم تنفيذ ما يقارب <h4 class="labeluuu">95%</h4> من المشروع</p>
+                                            <div class="mb-3 d-flex gap-3 flex-lg-row flex-column">
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="company">المقاول</label>
+                                                    <select id="company" class="selectpicker w-100"
+                                                        data-style="btn-default">
+                                                        <option>شركة عبدالمحسن شعبان القحطاني</option>
+                                                        <option>مؤسسة هدى الاتقان للمقاولات</option>
+                                                    </select>
+                                                </div>
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="location">الموقع - المدينة -
+                                                        المحافظة</label>
+                                                    <select id="location" class="selectpicker w-100"
+                                                        data-style="btn-default">
+                                                        <option>قلوة</option>
+                                                        <option>الرياض</option>
+                                                        <option>جدة</option>
+                                                    </select>
+                                                </div>
+                                                <div class="field w-100">
+                                                    <label for="status" class="form-label">الحالة</label>
+                                                    <select id="status" class="selectpicker w-100"
+                                                        data-style="btn-default">
+                                                        <option>منتظم</option>
+                                                        <option>متأخر</option>
+                                                        <option>متعثر</option>
+                                                        <option>مسحوب</option>
+                                                        <option>متوقف</option>
+                                                        <option>منجز</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="col-12 col-sm-8 col-md-12 col-lg-8">
-                                                <div id="completionRate"></div>
+                                            <div class="mb-3 d-flex gap-3 flex-lg-row flex-column">
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="start-date">تاريخ بدء الموقع
+                                                        (ميلادي)</label>
+                                                    <input type="date" class="form-control" id="start-date"
+                                                        name="start-date"/>
+                                                </div>
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="finish-date">تاريخ إنتهاء الموقع
+                                                        (ميلادي)
+                                                    </label>
+                                                    <input type="date" class="form-control" id="finish-date"
+                                                        name="finish-date" />
+                                                </div>
                                             </div>
-                                        </div>
+                                            <div class="mb-3 d-flex gap-3 flex-lg-row flex-column">
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="start-date">
+                                                        آخر الإجراءات المتخذة حيال المشروع
+                                                    </label>
+                                                    <input type="text" class="form-control" id="start-date"
+                                                        name="start-date" placeholder="لا يوجد" value="لا يوجد" />
+                                                </div>
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="finish-date">
+                                                        أسباب تأخر/توقف/تقطع العمل بالمشروع
+                                                    </label>
+                                                    <input type="text" class="form-control" id="finish-date"
+                                                        name="finish-date" placeholder="لا يوجد" value="لا يوجد" />
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 ">
+                                                <label class="form-label" for="project-name"> اضف ملاحظات
+                                                </label>
+                                                <input type="text" class="form-control" id="project-name"
+                                                    name="project-name" placeholder="الملاحظات" />
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label" for="projectLocation">الموقع</label>
+                                                <input type="text" id="projectLocation" class="form-control mb-3"
+                                                    placeholder="حدد موقع المشروع...">
+                                                <div id="mapLifting" style="height: 360px"></div>
+                                                <input type="hidden" id="latitude" name="latitude">
+                                                <input type="hidden" id="longitude" name="longitude">
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary ms-auto">ارسال</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -454,7 +452,6 @@
         <div class="drag-target"></div>
     </div>
     <!-- Core JS -->
-    <!-- build:js assets/vendor/js/core.js -->
     <script src="./assets/vendor/libs/jquery/jquery.js"></script>
     <script src="./assets/vendor/libs/popper/popper.js"></script>
     <script src="./assets/vendor/js/bootstrap.js"></script>
@@ -464,15 +461,90 @@
     <script src="./assets/vendor/libs/i18n/i18n.js"></script>
     <script src="./assets/vendor/libs/typeahead-js/typeahead.js"></script>
     <script src="./assets/vendor/js/menu.js"></script>
-    <!-- endbuild -->
     <!-- Vendors JS -->
     <script src="./assets/vendor/libs/apex-charts/apexcharts.js"></script>
     <script src="./assets/vendor/libs/swiper/swiper.js"></script>
+    <script src="./assets/vendor/libs/bootstrap-select/bootstrap-select.js"></script>
     <script src="./assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
     <!-- Main JS -->
     <script src="./assets/js/main.js"></script>
     <!-- Page JS -->
     <script src="./assets/js/dashboards-analytics.js"></script>
+    <!-- location search -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_N1k4WKCdiZqCIjjgO0aaKz1Y19JqYqw&libraries=places&callback=initMap">
+        </script>
+    <script>
+        let mapLifting;
+        let markerLifting;
+        let mapTarget;
+        let markerTarget;
+        function initMap(mapElement, searchBoxElement, latitudeElement, longitudeElement) {
+            const map = new google.maps.Map(document.getElementById(mapElement), {
+                center: { lat: 20.01219546620856, lng: 41.467541518554675 },
+                zoom: 12
+            });
+            const input = document.getElementById(searchBoxElement);
+            const searchBox = new google.maps.places.SearchBox(input);
+            map.addListener('bounds_changed', function () {
+                searchBox.setBounds(map.getBounds());
+            });
+            searchBox.addListener('places_changed', function () {
+                const places = searchBox.getPlaces();
+                if (places.length === 0) {
+                    return;
+                }
+                if (mapElement === 'mapLifting') {
+                    if (markerLifting) {
+                        markerLifting.setMap(null);
+                    }
+                    markerLifting = new google.maps.Marker({
+                        map: map,
+                        title: places[0].name,
+                        position: places[0].geometry.location,
+                        draggable: true
+                    });
+                    markerLifting.addListener('dragend', function (event) {
+                        const newPosition = event.latLng;
+                        document.getElementById(latitudeElement).value = newPosition.lat();
+                        document.getElementById(longitudeElement).value = newPosition.lng();
+                    });
+                    document.getElementById(latitudeElement).value = places[0].geometry.location.lat();
+                    document.getElementById(longitudeElement).value = places[0].geometry.location.lng();
+                } else if (mapElement === 'mapTarget') {
+                    if (markerTarget) {
+                        markerTarget.setMap(null);
+                    }
+                    markerTarget = new google.maps.Marker({
+                        map: map,
+                        title: places[0].name,
+                        position: places[0].geometry.location,
+                        draggable: true
+                    });
+                    markerTarget.addListener('dragend', function (event) {
+                        const newPosition = event.latLng;
+                        document.getElementById(latitudeElement).value = newPosition.lat();
+                        document.getElementById(longitudeElement).value = newPosition.lng();
+                    });
+                    // Update hidden input values when a place is selected
+                    document.getElementById(latitudeElement).value = places[0].geometry.location.lat();
+                    document.getElementById(longitudeElement).value = places[0].geometry.location.lng();
+                }
+                if (places.length > 0) {
+                    const bounds = new google.maps.LatLngBounds();
+                    places.forEach(function (place) {
+                        if (place.geometry.viewport) {
+                            bounds.union(place.geometry.viewport);
+                        } else {
+                            bounds.extend(place.geometry.location);
+                        }
+                    });
+                    map.fitBounds(bounds);
+                }
+            });
+        }
+        initMap('mapLifting', 'projectLocation', 'latitude', 'longitude');
+    </script>
 </body>
 
 </html>

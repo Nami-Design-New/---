@@ -108,6 +108,7 @@
       tooltip: { enabled: !1 },
       responsive: [{ breakpoint: 1025, options: { chart: { height: 199 } } }]
     },
+    // project _ details Elapsed period
     s = (
       null !== s && new ApexCharts(s, i).render(),
       document.querySelector("#supportTracker")
@@ -148,6 +149,63 @@
           shade: "dark",
           shadeIntensity: 0.5,
           gradientToColors: [config.colors.primary],
+          inverseColors: !0,
+          opacityFrom: 1,
+          opacityTo: 0.6,
+          stops: [30, 70, 100]
+        }
+      },
+      stroke: { dashArray: 10 },
+      grid: { padding: { top: -20, bottom: 5 } },
+      states: {
+        hover: { filter: { type: "none" } },
+        active: { filter: { type: "none" } }
+      },
+      responsive: [
+        { breakpoint: 1025, options: { chart: { height: 330 } } },
+        { breakpoint: 769, options: { chart: { height: 280 } } }
+      ]
+    },
+    s = (
+      null !== s && new ApexCharts(s, i).render(),
+      document.querySelector("#completionRate")
+    ),
+    i = {
+      series: [95],
+      labels: ["نسبة الإنجاز الفعلية"],
+      chart: { height: 260, type: "radialBar" },
+      plotOptions: {
+        radialBar: {
+          offsetY: 10,
+          startAngle: -140,
+          endAngle: 130,
+          hollow: { size: "65%" },
+          track: { background: e, strokeWidth: "100%" },
+          dataLabels: {
+            name: {
+              offsetY: -10,
+              color: a,
+              fontSize: "13px",
+              fontWeight: "400",
+              fontFamily: "Public Sans"
+            },
+            value: {
+              offsetY: 10,
+              color: t,
+              fontSize: "38px",
+              fontWeight: "500",
+              fontFamily: "Public Sans"
+            }
+          }
+        }
+      },
+      colors: ["#0df21d"],
+      fill: {
+        type: "gradient",
+        gradient: {
+          shade: "dark",
+          shadeIntensity: 0.5,
+          gradientToColors: ["#0df21d"],
           inverseColors: !0,
           opacityFrom: 1,
           opacityTo: 0.6,

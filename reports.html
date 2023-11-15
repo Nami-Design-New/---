@@ -310,10 +310,10 @@
                 <section class="reports_section">
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <h2 class="title">تقارير المشاريع</h2>
-                        <div class="row">
-                            <div class="col-lg-5 col-12">
-                                <div class="accordion" id="accordionWithIcon">
-                                    <div class="card accordion-item active">
+                        <div class="row gap-lg-0 gap-5">
+                            <div class="col-lg-3 col-12">
+                                <div class="accordion row" id="accordionWithIcon">
+                                    <div class="card accordion-item">
                                         <h2 class="accordion-header d-flex align-items-center">
                                             <button type="button" class="accordion-button" data-bs-toggle="collapse"
                                                 data-bs-target="#accordionWithIcon-1" aria-expanded="true">
@@ -323,37 +323,195 @@
                                         </h2>
                                         <div id="accordionWithIcon-1" class="accordion-collapse collapse show">
                                             <div class="accordion-body">
-
+                                                <div
+                                                    class="field d-flex align-items-center justify-content-between mb-1">
+                                                    <label for="regular">
+                                                        منتظم
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" name="regular"
+                                                        id="regular">
+                                                </div>
+                                                <div
+                                                    class="field d-flex align-items-center justify-content-between mb-1">
+                                                    <label for="late">
+                                                        متأخر
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" name="late"
+                                                        id="late">
+                                                </div>
+                                                <div
+                                                    class="field d-flex align-items-center justify-content-between mb-1">
+                                                    <label for="overed">
+                                                        متعثر
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" name="overed"
+                                                        id="overed">
+                                                </div>
+                                                <div
+                                                    class="field d-flex align-items-center justify-content-between mb-1">
+                                                    <label for="canceled">
+                                                        مسحوب
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" name="canceled"
+                                                        id="canceled">
+                                                </div>
+                                                <div
+                                                    class="field d-flex align-items-center justify-content-between mb-1">
+                                                    <label for="stoped">
+                                                        متوقف
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" name="stoped"
+                                                        id="stoped">
+                                                </div>
+                                                <div
+                                                    class="field d-flex align-items-center justify-content-between mb-1">
+                                                    <label for="finished">
+                                                        منجز
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" name="finished"
+                                                        id="finished">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item card">
                                         <h2 class="accordion-header d-flex align-items-center">
-                                            <button type="button" class="accordion-button collapsed"
-                                                data-bs-toggle="collapse" data-bs-target="#accordionWithIcon-2"
-                                                aria-expanded="false">
+                                            <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                                data-bs-target="#accordionWithIcon-2" aria-expanded="true">
                                                 <i class="me-2 ti ti-building-skyscraper ti-xs"></i>
                                                 الشركة
                                             </button>
                                         </h2>
-                                        <div id="accordionWithIcon-2" class="accordion-collapse collapse">
+                                        <div id="accordionWithIcon-2" class="accordion-collapse collapse show">
                                             <div class="accordion-body">
-
+                                                <div
+                                                    class="field d-flex align-items-center justify-content-between mb-1">
+                                                    <label for="company1">
+                                                        شركة عبدالمحسن شعبان القحطاني
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" name="company1"
+                                                        id="company1">
+                                                </div>
+                                                <div
+                                                    class="field d-flex align-items-center justify-content-between mb-1">
+                                                    <label for="company2">
+                                                        مؤسسة هدى الاتقان للمقاولات
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" name="company2"
+                                                        id="company2">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item card">
                                         <h2 class="accordion-header d-flex align-items-center">
-                                            <button type="button" class="accordion-button collapsed"
+                                            <button type="button" class="accordion-button"
                                                 data-bs-toggle="collapse" data-bs-target="#accordionWithIcon-3"
-                                                aria-expanded="false">
+                                                aria-expanded="true">
                                                 <i class="me-2 ti ti-map-pin ti-xs"></i>
                                                 المنطقة
                                             </button>
                                         </h2>
-                                        <div id="accordionWithIcon-3" class="accordion-collapse collapse">
+                                        <div id="accordionWithIcon-3" class="accordion-collapse collapse show">
                                             <div class="accordion-body">
-
+                                                <div class="field d-flex align-items-center justify-content-between mb-1">
+                                                    <label for="region1">
+                                                        قلوة
+                                                    </label>
+                                                    <input class="form-check-input" type="checkbox" name="region1"
+                                                        id="region1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 col-12 mt-lg-0 mt-3 ps-lg-4 ps-0">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="project card">
+                                            <div class="icon">
+                                                <img src="assets/img/icons/project.svg" alt="">
+                                            </div>
+                                            <h5>
+                                                صيانة طرق وشوارع بلدية محافظة قلوة
+                                            </h5>
+                                            <p>
+                                                <span>رقم المشروع: </span>
+                                                19/14/703/300010000/2241
+                                            </p>
+                                            <p>
+                                                <span>حالة المشروع :</span>
+                                                <span class="status-regular">منتظم</span>
+                                            </p>
+                                            <div class="links">
+                                                <a href="edit-project.html">
+                                                    <i class="ti ti-edit"></i>
+                                                </a>
+                                                <button>
+                                                    <i class="ti ti-trash"></i>
+                                                </button>
+                                                <a href="project_details.html">
+                                                    <i class="ti ti-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12 mt-lg-0 mt-5">
+                                        <div class="project card">
+                                            <div class="icon">
+                                                <img src="assets/img/icons/project.svg" alt="">
+                                            </div>
+                                            <h5>
+                                                انشاء حدائق و ممرات مشاه وساحات
+                                            </h5>
+                                            <p>
+                                                <span>رقم المشروع: </span>
+                                                19/14/301/406059900
+                                            </p>
+                                            <p>
+                                                <span>حالة المشروع :</span>
+                                                <span class="status-danger">متعثر</span>
+                                            </p>
+                                            <div class="links">
+                                                <a href="edit-project.html">
+                                                    <i class="ti ti-edit"></i>
+                                                </a>
+                                                <button>
+                                                    <i class="ti ti-trash"></i>
+                                                </button>
+                                                <a href="project_details.html">
+                                                    <i class="ti ti-eye"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12 mt-5">
+                                        <div class="project card">
+                                            <div class="icon">
+                                                <img src="assets/img/icons/project.svg" alt="">
+                                            </div>
+                                            <h5>
+                                                تسوير مقابر وانشاء مغاسل موتى
+                                            </h5>
+                                            <p>
+                                                <span>رقم المشروع: </span>
+                                                19/14/301/400730101/3111319
+                                            </p>
+                                            <p>
+                                                <span>حالة المشروع :</span>
+                                                <span class="status-wait">متأخر</span>
+                                            </p>
+                                            <div class="links">
+                                                <a href="edit-project.html">
+                                                    <i class="ti ti-edit"></i>
+                                                </a>
+                                                <button>
+                                                    <i class="ti ti-trash"></i>
+                                                </button>
+                                                <a href="project_details.html">
+                                                    <i class="ti ti-eye"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

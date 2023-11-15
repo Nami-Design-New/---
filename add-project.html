@@ -318,13 +318,14 @@
                                 <div class="card">
                                     <div class="card-body">
                                         <form>
-                                            <div class="mb-3 ">
-                                                <label class="form-label" for="project-name"> اسم المشروع
-                                                </label>
-                                                <input type="text" class="form-control" id="project-name"
-                                                    name="project-name" placeholder="انشاء حدائق و ممرات مشاه وساحات" />
-                                            </div>
                                             <div class="mb-3 d-flex gap-3 flex-lg-row flex-column">
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="project-name"> اسم المشروع
+                                                    </label>
+                                                    <input type="text" class="form-control" id="project-name"
+                                                        name="project-name"
+                                                        placeholder="انشاء حدائق و ممرات مشاه وساحات" />
+                                                </div>
                                                 <div class="field w-100">
                                                     <label class="form-label" for="project-number">رقم المشروع</label>
                                                     <input type="text" class="form-control" id="project-number"
@@ -384,6 +385,28 @@
                                                     <input type="date" class="form-control" id="finish-date"
                                                         name="finish-date" />
                                                 </div>
+                                            </div>
+                                            <div class="mb-3 d-flex gap-3 flex-lg-row flex-column">
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="start-date">
+                                                        آخر الإجراءات المتخذة حيال المشروع
+                                                    </label>
+                                                    <input type="text" class="form-control" id="start-date"
+                                                        name="start-date" placeholder="لا يوجد" value="لا يوجد" />
+                                                </div>
+                                                <div class="field w-100">
+                                                    <label class="form-label" for="finish-date">
+                                                        أسباب تأخر/توقف/تقطع العمل بالمشروع
+                                                    </label>
+                                                    <input type="text" class="form-control" id="finish-date"
+                                                        name="finish-date" placeholder="لا يوجد" value="لا يوجد" />
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 ">
+                                                <label class="form-label" for="project-name"> اضف ملاحظات
+                                                </label>
+                                                <input type="text" class="form-control" id="project-name"
+                                                    name="project-name" placeholder="الملاحظات" />
                                             </div>
                                             <div class="mb-3">
                                                 <label class="form-label" for="projectLocation">الموقع</label>
