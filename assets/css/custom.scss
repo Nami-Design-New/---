@@ -277,9 +277,11 @@ body {
       gap: 4px;
       h3 {
         font-size: 18px;
+        color: #fff;
         margin: 0;
       }
       h6 {
+        color: #fff;
         font-size: 32px;
         font-weight: 600;
       }
@@ -288,19 +290,6 @@ body {
   &:hover {
     transform: translateY(-8px);
     box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3) !important;
-    .card-body {
-      .icon {
-        transition: all 0.5s ease-in-out;
-        background: linear-gradient(
-          72.47deg,
-          rgba(115, 103, 240, 0.7) 22.16%,
-          #7367f0 76.47%
-        ) !important;
-        img {
-          filter: brightness(0) invert(1);
-        }
-      }
-    }
   }
 }
 .st_card {
@@ -475,4 +464,8 @@ body {
       }
     }
   }
+}
+.home_filter_btn {
+  background: var(--bs-body-bg) !important;
+  width: 110px;
 }
