@@ -74,10 +74,37 @@
             </a>
           </li>
           <li class="menu-item">
-            <a href="projects.html" class="menu-link">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
               <i class="menu-icon tf-icons ti ti-clipboard-list"></i>
               <div>المشاريع</div>
             </a>
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="projects.html" class="menu-link">
+                  <div>التعليم</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="projects.html" class="menu-link">
+                  <div>الصحة</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="projects.html" class="menu-link">
+                  <div>الطرق</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="projects.html" class="menu-link" target="_blank">
+                  <div>الكهرباء</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="projects.html" class="menu-link">
+                  <div>إنشاءات عامه</div>
+                </a>
+              </li>
+            </ul>
           </li>
           <!-- <li class="menu-item">
             <a href="work_locations.html" class="menu-link">
@@ -121,7 +148,7 @@
             <div class="navbar-nav align-items-center">
               <div class="nav-item navbar-search-wrapper mb-0">
                 <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
-                  <i class="ti ti-search ti-md me-2"></i>
+                  <i class="ti ti-search me-2"></i>
                   <span class="d-none d-md-inline-block text-muted">البحث</span>
                 </a>
               </div>
@@ -292,7 +319,50 @@
           <!-- Content -->
           <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row mt-2">
-              <div class="col-lg-9 col-12 mb-4">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card statics_card" style="background-image: linear-gradient(45deg, #fca41e, #fea21d);">
+                      <div class="card-body">
+                        <div class="info">
+                          <h3> المشاريع</h3>
+                          <h6>23+</h6>
+                        </div>
+                        <div class="icon">
+                          <img src="assets/img/cProjects.svg" alt="constructing_projects">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card statics_card" style="background-image: linear-gradient(45deg, #e83974, #da2164);">
+                      <div class="card-body">
+                        <div class="info">
+                          <h3> الشركات</h3>
+                          <h6>3+</h6>
+                        </div>
+                        <div class="icon">
+                          <img src="assets/img/companies.svg" alt="companies">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="card statics_card" style="background-image: linear-gradient(45deg, #60b766, #4ba04d);">
+                      <div class="card-body">
+                        <div class="info">
+                          <h3>مناطق العمل</h3>
+                          <h6>60+</h6>
+                        </div>
+                        <div class="icon">
+                          <img src="assets/img/locations.svg" alt="locations">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 mb-4">
                 <div class="card shadow-none">
                   <div class="card-header d-flex align-items-center justify-content-end gap-3">
                     <div class="dropdown d-flex">
@@ -339,19 +409,25 @@
                     </div>
                     <div class="dropdown d-flex">
                       <button type="button" class="btn dropdown-toggle home_filter_btn px-0" data-bs-toggle="dropdown"
-                        aria-expanded="false">الإدارات</button>
-                      <div class="dropdown-menu dropdown-menu-end" style="padding: 16px; width: 320px;">
+                        aria-expanded="false">المشاريع</button>
+                      <div class="dropdown-menu dropdown-menu-end" style="padding: 16px;">
                         <div class="field d-flex align-items-center justify-content-between mb-1">
                           <label for="company1">
-                            شركة عبدالمحسن شعبان القحطاني
+                            التعليم
                           </label>
                           <input class="form-check-input" type="checkbox" name="company1" id="company1">
                         </div>
                         <div class="field d-flex align-items-center justify-content-between mb-1">
                           <label for="company2">
-                            مؤسسة هدى الاتقان للمقاولات
+                            الصحة
                           </label>
                           <input class="form-check-input" type="checkbox" name="company2" id="company2">
+                        </div>
+                        <div class="field d-flex align-items-center justify-content-between mb-1">
+                          <label for="company3">
+                            إنشاءات عامة
+                          </label>
+                          <input class="form-check-input" type="checkbox" name="company3" id="company3">
                         </div>
                       </div>
                     </div>
@@ -365,54 +441,17 @@
                           </label>
                           <input class="form-check-input" type="checkbox" name="region1" id="region1">
                         </div>
+                        <div class="field d-flex align-items-center justify-content-between mb-1">
+                          <label for="region2">
+                            الرياض
+                          </label>
+                          <input class="form-check-input" type="checkbox" name="region2" id="region2">
+                        </div>
                       </div>
                     </div>
                   </div>
                   <div class="card-body">
-                    <div id="map" style="width: 100%; height: 300px;"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-12">
-                <div class="row">
-                  <div class="col-12 mb-4">
-                    <div class="card statics_card" style="background-image: linear-gradient(45deg, #fca41e, #fea21d);">
-                      <div class="card-body">
-                        <div class="info">
-                          <h3> المشاريع</h3>
-                          <h6>23+</h6>
-                        </div>
-                        <div class="icon">
-                          <img src="assets/img/cProjects.svg" alt="constructing_projects">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 mb-4">
-                    <div class="card statics_card" style="background-image: linear-gradient(45deg, #e83974, #da2164);">
-                      <div class="card-body">
-                        <div class="info">
-                          <h3> الشركات</h3>
-                          <h6>3+</h6>
-                        </div>
-                        <div class="icon">
-                          <img src="assets/img/companies.svg" alt="companies">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 mb-4">
-                    <div class="card statics_card" style="background-image: linear-gradient(45deg, #60b766, #4ba04d);">
-                      <div class="card-body">
-                        <div class="info">
-                          <h3>مناطق العمل</h3>
-                          <h6>60+</h6>
-                        </div>
-                        <div class="icon">
-                          <img src="assets/img/locations.svg" alt="locations">
-                        </div>
-                      </div>
-                    </div>
+                    <div id="map" style="width: 100%; height: 600px;"></div>
                   </div>
                 </div>
               </div>
@@ -528,48 +567,42 @@
         zoom: 12
       });
       // markers
-
       var marker1 = new google.maps.Marker({
         position: { lat: 19.95721051881781, lng: 41.2372128618408 },
         map: map,
-        title: 'Location 1',
-        // icon: {
-        //     url: 'assets/img/icon1.jpeg',
-        //     scaledSize: new google.maps.Size(60, 80)
-        // },
+        title: 'مشروع انشاء مجمع الشفاء الطبى',
       });
-
       var marker2 = new google.maps.Marker({
         position: { lat: 19.940993736257447, lng: 41.35326320058592 },
         map: map,
-        title: 'Location 2',
-        // icon: {
-        //     url: 'assets/img/icon1.jpeg',
-        //     scaledSize: new google.maps.Size(60, 80)
-        // },
+        title: 'مشروع انشاء قاعة مؤتمرات للجامعة الاسلامية',
       });
-
       var marker3 = new google.maps.Marker({
         position: { lat: 19.919944832271916, lng: 41.23129054433592 },
         map: map,
-        title: 'Location 3',
-        // icon: {
-        //     url: 'assets/img/icon2.webp',
-        //     scaledSize: new google.maps.Size(60, 80)
-        // },
+        title: 'مشروع رصف الطرق',
       });
-
+      var infoWindow1 = new google.maps.InfoWindow({
+        content: '<div><strong>مشروع انشاء مجمع الشفاء الطبى</strong><br>المدينه: الرياض<br><a href="project_details.html">تفاصيل المشروع</a></div>'
+      });
+      var infoWindow2 = new google.maps.InfoWindow({
+        content: '<div><strong>مشروع انشاء قاعة مؤتمرات للجامعة الاسلامية</strong><br>المدينة: قلوة<br><a href="project_details.html">تفاصيل المشروع</a></div>'
+      });
+      var infoWindow3 = new google.maps.InfoWindow({
+        content: '<div><strong>مشروع رصف الطرق</strong><br>المدينة: جدة<br><a href="project_details.html">تفاصيل المشروع</a></div>'
+      });
       marker1.addListener('click', function () {
-        window.location.href = 'project_details.html';
+        infoWindow1.open(map, marker1);
       });
       marker2.addListener('click', function () {
-        window.location.href = 'project_details.html';
+        infoWindow2.open(map, marker2);
       });
       marker3.addListener('click', function () {
-        window.location.href = 'project_details.html';
+        infoWindow3.open(map, marker3);
       });
     }
   </script>
+
 </body>
 
 </html>

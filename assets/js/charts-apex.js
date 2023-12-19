@@ -868,7 +868,7 @@
                                 color: o,
                                 label: "المشاريع",
                                 formatter: function (e) {
-                                    return "50"
+                                    return "670"
                                 }
                             }
                         }

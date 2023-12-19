@@ -250,7 +250,6 @@ body {
   }
 }
 .statics_card {
-  box-shadow: none !important;
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   .card-body {
@@ -261,14 +260,14 @@ body {
     .icon {
       transition: background 0.5s ease-in-out;
       background: var(--bs-body-bg);
-      width: 80px;
+      width: 60px;
       border-radius: 50%;
-      height: 80px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
       img {
-        height: 40px;
+        height: 32px;
       }
     }
     .info {
@@ -276,14 +275,15 @@ body {
       flex-direction: column;
       gap: 4px;
       h3 {
-        font-size: 18px;
+        font-size: 14px;
         color: #fff;
         margin: 0;
       }
       h6 {
         color: #fff;
-        font-size: 32px;
-        font-weight: 600;
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0;
       }
     }
   }
@@ -468,4 +468,18 @@ body {
 .home_filter_btn {
   background: var(--bs-body-bg) !important;
   width: 110px;
+}
+.Back{
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  padding: 0 !important;
+}
+.gm-style .gm-style-iw-c{
+  padding: 16px 16px 0 !important;
 }
