@@ -33,6 +33,8 @@
     <link rel="stylesheet" href="./assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
     <!-- Page CSS -->
     <link rel="stylesheet" href="./assets/vendor/css/pages/cards-advance.css" />
+    <!-- NAGAR -->
+    <link rel="stylesheet" href="./assets/css/custom-new.css" />
     <!-- Helpers -->
     <script src="./assets/vendor/js/helpers.js"></script>
     <!-- template style customizer-->
@@ -433,6 +435,18 @@
                                                     name="project-name" placeholder="الملاحظات" />
                                             </div>
                                             <div class="mb-3">
+                                                <div>
+                                                    <label for="upload" class="labelFiles">
+                                                        <input type="file" id="upload" accept=".pdf" class="uploadFiles" multiple>
+                                                    إرفاق ملفات
+                                                    </label>
+                                                </div>
+                                                <div class="files">
+                                                    <h2>الملفات المرفقة</h2>
+                                                    <ul></ul>
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
                                                 <label class="form-label" for="projectLocation">الموقع</label>
                                                 <input type="text" id="projectLocation" class="form-control mb-3"
                                                     placeholder="حدد موقع المشروع...">
@@ -492,6 +506,9 @@
     <!-- Page JS -->
     <script src="./assets/js/dashboards-analytics.js"></script>
     <!-- location search -->
+
+    <script src="./assets/js/custom-new.js"></script>
+
     <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_N1k4WKCdiZqCIjjgO0aaKz1Y19JqYqw&libraries=places&callback=initMap">
         </script>
